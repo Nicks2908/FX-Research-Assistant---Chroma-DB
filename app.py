@@ -35,7 +35,9 @@ from services.prompts import (
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+API_KEY = st.secrets["GOOGLE_API_KEY"]
+
+genai.configure(api_key=os.getenv("API_KEY"))
 
 # ====================================
 # PAGE
