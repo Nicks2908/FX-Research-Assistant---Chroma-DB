@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 from services.pdf_loader import extract_pages
 from services.chunker import create_chunks
 from services.embedding_service import generate_embedding
-from services.vector_store import (
-    create_faiss_index,
-    search_faiss_index
-)
+# from services.vector_store import (
+#     create_faiss_index,
+#     search_faiss_index
+# )
 from services.chroma_store import (
     store_chunks,search_chunks
 )
